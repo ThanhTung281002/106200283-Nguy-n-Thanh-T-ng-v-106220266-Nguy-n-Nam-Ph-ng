@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="thin carpet">
+    <pose>0 0 1 0 0 0</pose> <!-- x y z R P Y -->
+    <static>true</static>
+
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>10 20 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>10 20 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.3 0.8 1</ambient>
+          <diffuse>0.2 0.3 0.8 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
